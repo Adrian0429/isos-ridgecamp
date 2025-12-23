@@ -7,11 +7,7 @@ import TicketDisplayCard from "./TicketDisplayCard";
 
 export default function TicketSubmission() {
   const [submittedTicket, setSubmittedTicket] = useState<string | null>(null);
-  const [loading] = useState(false);
 
-  /* ===============================
-     CHECK COOKIE ON LOAD
-  =============================== */
   useEffect(() => {
     const cookie = document.cookie
       .split("; ")
@@ -25,40 +21,27 @@ export default function TicketSubmission() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-blue-50 to-blue-100">
+    <div className="min-h-screen flex flex-col bg-linear-to-br from-blue-50 to-blue-100">
       {/* HEADER */}
       <header className="bg-white shadow-md">
-        <div className="max-w-7xl mx-auto px-4 py-3">
-          <div className="flex flex-row sm:flex-row items-center justify-between gap-3">
-            {/* Left logo */}
-            <div className="flex items-center justify-center sm:justify-start">
-              <Image
-                src="/isos.png"
-                alt="International SOS"
-                width={120}
-                height={25}
-                className="h-auto w-25 sm:w-30"
-                priority
-              />
-            </div>
-
-            {/* Right logo */}
-            <div className="flex items-center justify-center sm:justify-end">
-              <Image
-                src="/freeport.jpg"
-                alt="Freeport Indonesia"
-                width={250}
-                height={70}
-                className="h-auto w-45 sm:w-55 md:w-62.5"
-                priority
-              />
-            </div>
-          </div>
+        <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+          <Image
+            src="/isos.png"
+            alt="International SOS"
+            width={120}
+            height={25}
+          />
+          <Image
+            src="/freeport.jpg"
+            alt="Freeport Indonesia"
+            width={250}
+            height={70}
+          />
         </div>
       </header>
 
       {/* MAIN */}
-      <main className="flex items-center justify-center min-h-[calc(100dvh-96px)] px-6">
+      <main className="flex-1 flex items-center justify-center px-6">
         {submittedTicket ? (
           <TicketDisplayCard
             ticket={submittedTicket}
@@ -66,12 +49,13 @@ export default function TicketSubmission() {
           />
         ) : (
           <TicketInputCard
-            loading={loading}
             onSubmitSuccess={(ticket) => setSubmittedTicket(ticket)}
           />
         )}
       </main>
-      <p className="absolute bottom-0 right-4 text-xs text-gray-500 italic">
+
+      {/* FOOTER */}
+      <p className="absolute bottom-2 right-4 text-xs text-gray-400 italic">
         Powered by Contract &amp; Compliance Dept.
       </p>
     </div>
