@@ -58,7 +58,7 @@ export default function TicketSubmission() {
       </header>
 
       {/* MAIN */}
-      <main className="flex items-center justify-center h-[calc(100vh-96px)] px-6">
+      <main className="flex items-center justify-center min-h-[calc(100dvh-96px)] px-6">
         {submittedTicket ? (
           <TicketDisplayCard
             ticket={submittedTicket}
