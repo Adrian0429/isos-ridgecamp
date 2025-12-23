@@ -55,9 +55,9 @@ export default function TicketSubmission() {
       </main>
 
       {/* FOOTER */}
-      <p className="absolute bottom-2 right-4 text-xs text-gray-400 italic">
+      {/* <p className="absolute bottom-2 right-4 text-xs text-gray-400 italic">
         Powered by Contract &amp; Compliance Dept.
-      </p>
+      </p> */}
     </div>
   );
 }
