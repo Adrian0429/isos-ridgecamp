@@ -46,7 +46,12 @@ export default function TicketInputCard({ onSubmitSuccess }: Props) {
     <div className="flex flex-col justify-between bg-white rounded-lg shadow-lg p-8 max-w-lg w-full">
       {/* TITLE */}
       <div>
-        <h1 className="text-4xl font-bold text-gray-800">Submit Ticket</h1>
+        <h1 className="text-4xl w-full text-center font-bold text-cyan-900">
+          ISOS - KUALA KENCANA
+        </h1>
+        <h1 className="mt-10 text-3xl font-bold text-gray-800">
+          Submit Ticket
+        </h1>
         <p className="text-xl text-gray-600 mt-2">
           Enter your ticket number
           <br />
