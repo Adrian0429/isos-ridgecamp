@@ -47,7 +47,7 @@ export default function TicketInputCard({ onSubmitSuccess }: Props) {
       {/* TITLE */}
       <div>
         <h1 className="text-4xl w-full text-center font-bold text-cyan-900">
-          ISOS - KUALA KENCANA
+          ISOS - TEMBAGAPURA
         </h1>
         <h1 className="mt-10 text-3xl font-bold text-gray-800">
           Submit Ticket
