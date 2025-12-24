@@ -32,7 +32,7 @@ export default function TicketSubmission() {
             height={25}
           />
           <Image
-            src="/freeport.jpg"
+            src="/freeport.png"
             alt="Freeport Indonesia"
             width={250}
             height={70}

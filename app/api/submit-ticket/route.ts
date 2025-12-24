@@ -51,12 +51,12 @@ export async function POST(req: NextRequest) {
     // Append data to the "tembagapura" sheet
     console.log('Attempting to append data to sheet...');
     console.log('Sheet ID:', process.env.GOOGLE_SHEET_ID);
-    console.log('Range: tembagapura!A1:B1');
+    console.log('Range: Ridge Camp!A1:B1');
     console.log('Data:', [[ticketNumber, timestamp]]);
 
     const appendResponse = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
-      range: 'tembagapura!A1:B1',
+      range: 'Ridge Camp!A1:B1',
       valueInputOption: 'USER_ENTERED',
       insertDataOption: 'INSERT_ROWS',
       requestBody: {

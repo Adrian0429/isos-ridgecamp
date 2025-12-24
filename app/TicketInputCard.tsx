@@ -47,11 +47,9 @@ export default function TicketInputCard({ onSubmitSuccess }: Props) {
       {/* TITLE */}
       <div>
         <h1 className="text-4xl w-full text-center font-bold text-cyan-900">
-          ISOS - TEMBAGAPURA
+          ISOS - RIDGECAMP
         </h1>
-        <h1 className="mt-10 text-3xl font-bold text-gray-800">
-          Submit Ticket
-        </h1>
+        <h1 className="mt-10 text-3xl font-bold text-gray-800">Submit Ticket</h1>
         <p className="text-xl text-gray-600 mt-2">
           Enter your ticket number
           <br />

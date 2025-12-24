@@ -1,5 +1,5 @@
 {
-  "name": "isos-queue-tpra",
+  "name": "isos-queue-ridgecamp",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "googleapis": "^169.0.0",
-    "lucide-react": "^0.562.0",
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3"
